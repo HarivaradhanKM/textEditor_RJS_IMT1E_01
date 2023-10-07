@@ -61,29 +61,34 @@ export const IconContainer = styled.ul`
   margin-bottom: 0;
   padding-left: 0;
 `
-export const BoldButton = styled.li`
+
+export const IconListContainer = styled.li`
+  list-style-type: none;
+`
+
+export const BoldButton = styled.button`
   background-color: transparent;
   font: 400 25px Roboto;
-  color: #f1f5f9;
+  color: ${props => props.color};
   border: none;
   margin-left: 20px;
   margin: 10px;
   list-style-type: none;
 `
-export const ItalicButton = styled.li`
+export const ItalicButton = styled.button`
   background-color: transparent;
   font: 25px Roboto;
   font-style: italic;
-  color: #f1f5f9;
+  color: ${props => props.color};
   border: none;
   margin: 10px;
   list-style-type: none;
 `
-export const UnderlineButton = styled.li`
+export const UnderlineButton = styled.button`
   background-color: transparent;
   font: 22px Roboto;
   text-decoration: underline;
-  color: #f1f5f9;
+  color: ${props => props.color};
   border: none;
   margin: 10px;
   list-style-type: none;

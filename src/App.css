@@ -10,12 +10,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.textarea {
-  background-color: transparent;
-  width: 457px;
-  color: #f1f5f9;
-  border: none;
-  font-size: 15px;
-  padding: 10;
-}

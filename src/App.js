@@ -8,6 +8,7 @@ import {
   TextEditorImage,
   EditorContainer,
   IconContainer,
+  IconListContainer,
   BoldButton,
   ItalicButton,
   UnderlineButton,
@@ -42,27 +43,36 @@ const App = () => {
         </ImageContainer>
         <EditorContainer>
           <IconContainer>
-            <BoldButton
-              data-testid="bold"
-              isActive={isBoldActive}
-              onClick={handleBoldClick}
-            >
-              B
-            </BoldButton>
-            <ItalicButton
-              data-testid="italic"
-              isActive={isItalicActive}
-              onClick={handleItalicClick}
-            >
-              i
-            </ItalicButton>
-            <UnderlineButton
-              data-testid="underline"
-              isActive={isUnderlineActive}
-              onClick={handleUnderlineClick}
-            >
-              U
-            </UnderlineButton>
+            <IconListContainer>
+              <BoldButton
+                data-testid="bold"
+                isActive={isBoldActive}
+                onClick={handleBoldClick}
+                color={isBoldActive ? '#faff00' : '#f1f5f9'}
+              >
+                B
+              </BoldButton>
+            </IconListContainer>
+            <IconListContainer>
+              <ItalicButton
+                data-testid="italic"
+                isActive={isItalicActive}
+                onClick={handleItalicClick}
+                color={isItalicActive ? '#faff00' : '#f1f5f9'}
+              >
+                i
+              </ItalicButton>
+            </IconListContainer>
+            <IconListContainer>
+              <UnderlineButton
+                data-testid="underline"
+                isActive={isUnderlineActive}
+                onClick={handleUnderlineClick}
+                color={isUnderlineActive ? '#faff00' : '#f1f5f9'}
+              >
+                U
+              </UnderlineButton>
+            </IconListContainer>
           </IconContainer>
           <textarea
             style={{
